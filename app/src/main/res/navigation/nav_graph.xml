@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+    <activity
+        android:id="@+id/nav_record"
+        android:name="com.example.dhvani.RecordActivity"
+        android:label="@string/record"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:layout="@layout/activity_record"
+        />
+    <activity
+        android:id="@+id/nav_find"
+        android:name="com.example.dhvani.FindActivity"
+        android:label="@string/speak"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:layout="@layout/activity_find"
+        />
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/nav_home">
+        <activity
+            android:id="@+id/nav_home"
+            android:name="com.example.dhvani.MainActivity"
+            android:label="@string/welcome"
+            tools:layout="@layout/activity_main" />
+        <action
+            android:id="@+id/action_global_nav_record"
+            app:destination="@id/nav_record" />
+        <action
+            android:id="@+id/action_global_nav_find2"
+            app:destination="@id/nav_find" />
+    </navigation>
+
+
+</navigation>

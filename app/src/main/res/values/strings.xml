@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dhvani</string>
+    <string name="welcome_to_dhvani">Welcome to Dhvani!</string>
+    <string name="voice_recognition">voice recognition</string>
+    <string name="speak">Speak</string>
+    <string name="welcome">welcome</string>
+    <string name="record">Record Voice</string>
+    <string name="title_activity_record">RecordActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
