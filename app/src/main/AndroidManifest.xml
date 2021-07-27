@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dhvani">
         <activity android:name=".RecordActivity"></activity>
-        <activity android:name=".FindActivity" />
+        <activity android:name=".FindActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
