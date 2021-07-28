@@ -42,7 +42,7 @@
         android:text="@string/app_name"
         android:textColor="@color/purple_500"
         android:textStyle="bold"
-        android:textSize="60dp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -52,17 +52,30 @@
 
 
     <Button
+        android:id="@+id/st_spk_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="STOP"
+        app:layout_constraintBottom_toBottomOf="@id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
         android:id="@+id/spk_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/speak"
+        android:text="Speak"
         app:layout_constraintBottom_toBottomOf="@id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.494" />
 
     <TextView
         android:id="@+id/final_op"
@@ -71,15 +84,15 @@
         android:layout_marginTop="131dp"
         android:layout_marginBottom="216dp"
         android:fontFamily="monospace"
-        android:text="That is:"
+        android:text="That voice is of:"
         android:textColor="@color/purple_500"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spk_button"
+        app:layout_constraintTop_toBottomOf="@+id/pengu"
         app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -93,6 +106,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_nav_menue" />
+
+
+    <EditText
+        android:id="@+id/final_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unknown"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintTop_toBottomOf="@+id/final_op"
+        android:textAlignment="center"
+        app:layout_constraintVertical_bias="0.729"
+        tools:layout_editor_absoluteX="31dp"
+        android:gravity="center_horizontal" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,8 +3,11 @@
     package="com.example.dhvani">
 
     <uses-permission android:name="android.permission.RECORD" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    android:maxSdkVersion="18"
 
     <application
         android:allowBackup="true"
